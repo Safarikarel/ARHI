@@ -1,0 +1,63 @@
+\documentclass[range]{ar2e}%%%Put [range] option here for references citations to
+                           %%%print as [1--10] for numbered references.
+                           %%% Default is [1,2,3,4,5,6,7,8,9,10]
+                           
+\usepackage{graphicx}
+\usepackage{lineno}
+%\usepackage{cite}
+\bibliographystyle{arnuke_revised}
+
+\input{gr_custom_defs.tex}
+                           
+\begin{document}
+
+\linenumbers
+
+%\input epsf.tex    %<-If you need EPS figures to be
+                   %  called in {figure} environment for PC
+%\input epsf.def   %<-If you need EPS figures to be
+                   %  called in {figure} environment for Macintosh
+
+%\input psfig.sty
+
+\jname{Ann. Rev. Nucl. Part. Sci,}
+\jyear{2014}
+\jvol{}
+\ARinfo{1056-8700/97/0610-00}
+
+\title{Hard-Scattering Results in Heavy-Ion Collisions at LHC}
+
+\markboth{{Norbeck,} {\v{S}afa\v{r}\'{\i}k \&} {Steinberg}}{Hard-Scattering Results in Heavy-Ion Collisions at LHC}
+
+\author{Edwin Norbeck \affiliation{Department of Physics and Astronomy, University of Iowa, Iowa City, IA 52242, USA}
+Karel \v{S}afa\v{r}\'{\i}k \affiliation{CERN, European Organization for Nuclear Research, Geneva, Switzerland}
+Peter A. Steinberg \affiliation{Brookhaven National Laboratory, Upton, NY 11973, USA}
+}
+
+\begin{keywords}
+key1, key2, key3, max6
+\end{keywords}
+
+\input{abstract.tex}
+
+\maketitle
+
+\input{introduction.tex}
+
+\input{particlespectra.tex}
+
+\input{heavyflavor.tex}
+
+\input{quarkonia.tex}
+
+\input{electroweak.tex}
+
+\input{jets.tex}
+
+\input{summary.tex}
+
+\input{acknowledgment.tex}
+
+\bibliography{heavyion}
+
+\end{document}
