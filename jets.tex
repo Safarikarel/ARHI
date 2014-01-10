@@ -146,7 +146,13 @@ For a given jet radius (e.g. $R=0.4$ shown here), no signficant $\pT$ dependence
 However, as the centrality is increased, the yield of jets becomes systematically more suppressed,
 reaching approximately a factor of two suppresison in the 0-10\% centrality interval.
 
-
+Within a given centrality interval, the study of jet rates as a function their angle relative 
+to the event plane provides a means to study the path length dependence of jet quenching.
+The right panel of Figure~\ref{fig:pas:rcprfour} shows measured values of $v_2$ as a function
+of jet $\pT$, where $v_2$ is the amplitude of an observed $\cos(2\phi)$ modulation relative to
+the event plane measued with the ATLAS forward calorimeters.  This ``elliptic'' modulation of
+jet rates has already provided similar information as high $\pT$ hadrons, but without 
+any effects from the non-perturbative jet fragmentation functions.
 
 \begin{figure}[!th]
 \begin{center}
@@ -170,6 +176,16 @@ systematic uncertainties are shown as shaded boxes. Reproduced from~\cite{Aad:20
 
 \subsection{Jet structure}
 
+The study of both single and dijet jet rates clearly indicates that jets emitted in heavy ion 
+collisions lose energy as they traverse the hot and dense medium.  It is natural to expect
+that the radiation pattern emitted within a jet should be modified by the energy loss
+process.  This has been addressed by a variety of approaches.
+
+ATLAS has measured the change in $R_{CP}$ as a function of jet radius (from 0.2 to 0.5) at
+a fixed measured jet $\pT$.  This is shown in Figure~\ref{fig:pas:ATLAS_jet_rcp}, where it
+is observed that the measured value of $R_{CP}$ increases significantly with increasing radius.
+This indicates that jets with larger radius are slightly less suppressed, presumably since 
+the jet energy profile is slightly wider in more central events.
 \begin{figure}[!th]
 \includegraphics[width=0.59\textwidth]{jetfigures/ATLAS_jetRCP_size.pdf}
 \begin{center}
@@ -181,9 +197,23 @@ indicate partially correlated systematic errors. The lines indicate
 systematic errors that are fully correlated between different \pT\ bins.
 Reproduced from~\cite{Aad:2012is}.
 }
-\label{fig:GR:ATLAS_jet_v2}
+\label{fig:pas:ATLAS_jet_rcp}
 \end{center}
 \end{figure}
+
+The jet shape variable reflects the distribution of energy as a function of the radial coordinate
+relative to the nominal jet direction.
+The CMS measurements of jet shape as a function of centrality are shown in Figure~\ref{fig:pas:CMS_shape}.
+The distributions for each system are individually normalized to unity.
+The individual measurements in Pb+Pb and pp are shown as a function of centrality in the top row,
+while their ratio is shown in the bottom row.
+It is observed that the jet shape in peripheral collisions are consistent within uncertainties with pp,
+while in the most central collisions, there is a depletion at moderate $r$ and an enhancment at large $r$.
+While the relative enhancement at $r=0.3$ is large, it should be noted that the absolute change in the energy
+flow is not large.
+
+%The longitudinal fragmentation function $(1/N_{jet}) dN_{tr}/d\zeta$, where $\zeta = \ln(1/z)$ with
+%$z = \p^{track}_{||}/p_{jet}$, measured in the dijet center-of-mass frame was 
 
 \begin{figure}[!ht]
 \begin{center}
@@ -209,10 +239,27 @@ Statistical uncertainties are smaller than the marker size.
 Error bars show the statistical uncertainties and shaded boxes indicate the systematic uncertainties. 
 Reproduced from~\cite{Chatrchyan:2013kwa}
 }
+\label{fig:pas:CMS_shape}
 \end{center}
 \end{figure}
 
 \subsection{Energy flow in dijet events}
+
+The previous sections have demonstrated that the energy loss of jets is accompanied by a modest
+change in jet structure within the nominal jet cone, suggestive of a broadening of the overall
+jet energy flow.
+Given this, it remains an open question where the rest of the lost energy goes.  
+In the first CMS jet publication, the overall conservation of transverse momentum was used to 
+study the energy flow associated with asymmetric dijets.  By using all tracks with $\pT>0.5$ GeV,
+it was found that there was no missing transverse energy within the angular acceptance of the
+CMS silicon tracker.  
+The transverse energy balance was then compared in data and simulations 
+for $\Delta R<0.8$ and $\Delta R >0.8$ as a function of the dijet asymmetry.
+The most asymmetric events in the simulations achieved the overall energy balance 
+with high momentum particles, suggesting that the balance at large angle was still achieved
+by jet emission.  In the data, the energy balance was achieved by the emission of more 
+soft particles, quite different than the simulations.
+
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{jetfigures/missingPtParallel-Corrected-data-InConeOutConeDPhiCut_ntv6_2.pdf}
