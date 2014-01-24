@@ -1,42 +1,45 @@
-\section{Jet suppression}
+\section{JET SUPPRESSION}
 \label{jets}
 Unlike the production of electroweak bosons, which is observed to be essentially described by
 an independent superposition of nucleon-nucleon collisions within current experimental uncertainties,
 jet production is substantially modified in high energy heavy ion collisions.
-The first indications of this were observed by all four major experiments at the RHIC collider.
-The rates of high transverse momentum ($\pT>4$ GeV) particles emitted in Au+Au collisions
-were found to be suppressed
-by a factor of approximately 5 relative to the rates predicted using the number of binary
-collisions, something not seen in d+Au collisions (ruling out strong nPDF effects).
-Correlations of high momentum particle pairs (typically referred to as ``trigger'' and ``associated''
-particles) also showed a distinctive signature of the disappearance
-of back-to-back associated particle emission in Au+Au up to trigger $\pT \sim 8$ GeV, 
-again something not observed in d+Au.
+%The first indications of this were observed by all four major experiments at the RHIC collider.
+%The rates of high transverse momentum ($\pT>4$ GeV) particles emitted in Au+Au collisions
+%were found to be suppressed
+%by a factor of approximately 5 relative to the rates predicted using the number of binary
+%collisions, something not seen in d+Au collisions (ruling out strong nPDF effects).
+%Correlations of high momentum particle pairs (typically referred to as ``trigger'' and ``associated''
+%particles) also showed a distinctive signature of the disappearance
+%of back-to-back associated particle emission in Au+Au up to trigger $\pT \sim 8$ GeV, 
+%again something not observed in d+Au.
 The RHIC experimental program did not have the large acceptance detectors or the large jet rates 
 available at the LHC, and so jet measurements have been particularly challenging and no 
 published results are available.
-
 Jets are measured by all three large LHC experiments.  ATLAS and CMS are similar in that they
 have large acceptance ($|\eta|<5$) hadronic and electromagnetic calorimetric coverage, and 
 precise silicon trackers ($|\eta|<2.4$ for CMS and $|\eta|<2.5$ for ATLAS), 
 both of which are used in jet measurements.
-ATLAS primarily relies on calorimetric jet measurements, grouping smaller readout ``cells''
-into towers of angular size $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$. 
-The anti-$k_t$ jet clustering algorithm is used to partition the towers into proto-jets
-and exclude towers in regions with large localized energy depositions.  The remaining towers
-are then used to estimate the uncorrelated background as a function of $\eta$, including
-an estimate for an overall azimuthal modulation due to elliptic flow.  This background is subtracted
-cell-by-cell in each calorimeter 
-layer from all remaining jet candidates and then the background estimated again after excluding
-jets with $E_T>25$ GeV.  After this second step the background is subtracted again from all
-jets, and the final jet kinematics are recalculated using the subtracted cells.
-CMS also uses an iterative procedure based on calorimeter towers.  For each $\eta$ ring
-of $\Delta \eta \sim 0.87$, the average transverse energy and standard deviation are calculated
-for each event and $\langle E_T \rangle + \sigma$ are subtracted from each event, and negative
-values are set to zero.  Jets are then found using an iterative cone algorithm, the tower background
-recalculated after excluding jets of at least 30 GeV, and the final jets are reconstructed 
-on the subtracted towers.
-CMS also uses the particle flow technique, providing tracks and calorimeter objects to the 
+%ATLAS primarily relies on calorimetric jet measurements, grouping smaller readout ``cells''
+%into towers of angular size $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$. 
+%The anti-$k_t$ jet clustering algorithm is used to partition the towers into proto-jets
+%and exclude towers in regions with large localized energy depositions.  The remaining towers
+%are then used to estimate the uncorrelated background as a function of $\eta$, including
+%an estimate for an overall azimuthal modulation due to elliptic flow.  This background is subtracted
+%cell-by-cell in each calorimeter 
+%layer from all remaining jet candidates and then the background estimated again after excluding
+%jets with $E_T>25$ GeV.  After this second step the background is subtracted again from all
+%jets, and the final jet kinematics are recalculated using the subtracted cells.
+%CMS also uses an iterative procedure based on calorimeter towers.  For each $\eta$ ring
+%of $\Delta \eta \sim 0.87$, the average transverse energy and standard deviation are calculated
+%for each event and $\langle E_T \rangle + \sigma$ are subtracted from each event, and negative
+%values are set to zero.  Jets are then found using an iterative cone algorithm, the tower background
+%recalculated after excluding jets of at least 30 GeV, and the final jets are reconstructed 
+%on the subtracted towers.
+ATLAS primarily relies on calorimetric jet measurement, grouping smaller readout ``cells''      
+into towers of angular size $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$, and 
+clustering them with the anti-$k_t$ algorithm with varying cone size.
+CMS uses both a seeded cone algorithm and a 
+particle flow technique, providing tracks and calorimeter objects to the 
 anti-$k_t$ algorithm with $R=0.3$.
 ALICE has much smaller angular coverage and so no published full jet results are available.
 
@@ -44,7 +47,7 @@ ALICE has much smaller angular coverage and so no published full jet results are
 
 The first result on jets at the LHC was released by the ATLAS collaboration 
 several weeks after first collisions were seen by the three main experiments.  
-ATLAS performed a measurement of
+ATLAS performed a measurement~\cite{Aad:2010bu} of
 the asymmetry between the two highest-energy jets in events with at least one jet
 with $E_{T1} > 100$ GeV, and a second jet $E_{T2} > 25$ GeV.  The asymmetry is
 then defined as $A_J = (E_{T1} - E_{T2})/(E_{T1} + E_{T2})$.
@@ -58,10 +61,10 @@ progressively wider in the more central events, indicating an increasing attenua
 of the energy of the second jet relative to the leading jet.  This is generally
 understood to be a direct observation of jet quenching, where the jet loses energy
 in the hot and dense medium.
-While the RHIC results generated a wide range of theoretical descriptions, the reliance
-on leading particles precluded strong statements about the nature of the energy
-loss process, whether it was from the inducement of a single hard radiative gluon
-from the primary, or from many soft radiations.
+%While the RHIC results generated a wide range of theoretical descriptions, the reliance
+%on leading particles precluded strong statements about the nature of the energy
+%loss process, whether it was from the inducement of a single hard radiative gluon
+%from the primary, or from many soft radiations.
 The lower row on the ATLAS figure already indicated that the energy loss could not be
 from single hard emissions since the back-to-back pattern observed in pp and in
 the most peripheral sample was essentially unchanged even in the 0-10\% most
@@ -76,40 +79,42 @@ simulations (solid yellow histograms), as a function of collision centrality.
 Proton-proton data from $\sqrt{s}=7$\TeV\ is shown as open circles.
 (bottom) Distribution of $\dphi$ between the two jets, 
 for data and {\sc{hijing+pythia}}, shown in four bins of centrality.
-Reproduced from~\cite{Aad:2010bu}.}
+Reproduced from~\cite{Aad:2010bu}.
+}
 \label{fig:pas:final_4x2}
 \end{center}
 \end{figure}
 
-CMS extended this study using the higher-statistics 2011 Pb+Pb dataset (with nearly a
+CMS extended this study using the higher-statistics 2011 Pb+Pb dataset~\cite{CMS_dijet} 
+(with nearly a
 factor of 100 increase in luminosity relative to the original ATLAS paper).
-Their result shows the evolution of $\langle p_{T,2}/p_{T,1} \rangle$, 
-using events with jet $p_{T1} > 120$ GeV, jet $p_{T,2} > 30$ GeV
-and $\Delta\phi_{12} > 2\pi/3$ to select back-to-back topologies, is shown in Figure~\ref{fig:PAS:CMS_pt_ratio}
-as a function of $p_{T,1}$.
-Since these data do not unfold the effect of the known experimental energy resolution for jets,
-they are compared to similarly reconstructed pp data as well as fully-reconstructed HYDJET events
-with embedded PYTHIA dijets.
-The rising trend observed in each panel, both the heavy ion and pp data, as well as the simulated events,
-can be generally understood as arising from the $\pT$ dependence of the jet resolution, which degrades at lower
-jet $\pT$, and thus pushes the reconstructed $\langle p_{T,2}/p_{T,1} \rangle$ lower simply from the 
-ordering of the jets.
-However, the difference between data and simulation increases significantly as the events become more
-central.  This is shown in the lower panels as a function of $p_{T,1}$ and is found to be constant within
-experimental uncertainties.
+%Their result shows the evolution of $\langle p_{T,2}/p_{T,1} \rangle$, 
+%using events with jet $p_{T1} > 120$ GeV, jet $p_{T,2} > 30$ GeV
+%and $\Delta\phi_{12} > 2\pi/3$ to select back-to-back topologies, is shown in Figure~\ref{fig:PAS:CMS_pt_ratio}
+%as a function of $p_{T,1}$.
+%Since these data do not unfold the effect of the known experimental energy resolution for jets,
+%they are compared to similarly reconstructed pp data as well as fully-reconstructed HYDJET events
+%with embedded PYTHIA dijets.
+%The rising trend observed in each panel, both the heavy ion and pp data, as well as the simulated events,
+%can be generally understood as arising from the $\pT$ dependence of the jet resolution, which degrades at lower
+%jet $\pT$, and thus pushes the reconstructed $\langle p_{T,2}/p_{T,1} \rangle$ lower simply from the 
+%ordering of the jets.
+%However, the difference between data and simulation increases significantly as the events become more
+%central.  This is shown in the lower panels as a function of $p_{T,1}$ and is found to be constant within
+%experimental uncertainties.
 
-\begin{figure}[!th]
-\begin{center}
-\includegraphics[width=0.75\textwidth]{jetfigures/deltaPtOverPt5_lead120_sub30_diff_20120103.pdf}
-%\includegraphics[width=0.75\textwidth]{jetfigures/Photonv7_Paper_InclPtRatio_all_cent4_G60J30_subDPhi1SS1_Isol0_Norm1log1.pdf}
-\caption{
-(top, upper): Dijet momentum ratio $\langle \ptsub/\ptlead \rangle$ as a function of
-leading jet \pT\ in three bins of collision centrality.
-\PbPb\ data are shown as points, with brackets indicating systematic uncertainties.  
-\PYTHYD\ calculations are shown as squares. In the peripheral bin,
-\pp\ data are displayed as open circles.
-(top, lower): Difference of $\langle \ptsub/\ptlead \rangle$ between the \PbPb\ results and \PYTHYD\ reference.
-Reproduced from~\cite{CMS_dijet}.
+%\begin{figure}[!th]
+%\begin{center}
+%\includegraphics[width=0.75\textwidth]{jetfigures/deltaPtOverPt5_lead120_sub30_diff_20120103.pdf}
+%%\includegraphics[width=0.75\textwidth]{jetfigures/Photonv7_Paper_InclPtRatio_all_cent4_G60J30_subDPhi1SS1_Isol0_Norm1log1.pdf}
+%\caption{
+%(top, upper): Dijet momentum ratio $\langle \ptsub/\ptlead \rangle$ as a function of
+%leading jet \pT\ in three bins of collision centrality.
+%\PbPb\ data are shown as points, with brackets indicating systematic uncertainties.  
+%\PYTHYD\ calculations are shown as squares. In the peripheral bin,
+%\pp\ data are displayed as open circles.
+%(top, lower): Difference of $\langle \ptsub/\ptlead \rangle$ between the \PbPb\ results and \PYTHYD\ reference.
+%Reproduced from~\cite{CMS_dijet}.
 %(bottom)
 %Distribution of the photon/jet 
 %momentum ratio, \xjg, in four bins of collision centrality. 
@@ -118,10 +123,10 @@ Reproduced from~\cite{CMS_dijet}.
 %  2.76\TeV\ (filled squares), and to the \PYTHYD\ MC simulations
 %  (shaded histogram). Error bars show the statistical uncertainties and
 %boxes show the (anti-correlated) systematic uncertainties. Reproduced from~\cite{Chatrchyan:2012gt}.
-}
-\label{fig:PAS:CMS_pt_ratio}
-\end{center}
-\end{figure}
+%}
+%\label{fig:PAS:CMS_pt_ratio}
+%\end{center}
+%\end{figure}
 
 
 \subsection{Jet yields and jet suppression}
@@ -181,26 +186,26 @@ collisions lose energy as they traverse the hot and dense medium.  It is natural
 that the radiation pattern emitted within a jet should be modified by the energy loss
 process.  This has been addressed by a variety of approaches.
 
-ATLAS has measured the change in $R_{CP}$ as a function of jet radius (from 0.2 to 0.5) at
-a fixed measured jet $\pT$.  This is shown in Figure~\ref{fig:pas:ATLAS_jet_rcp}, where it
-is observed that the measured value of $R_{CP}$ increases significantly with increasing radius.
+ATLAS has also measured the change in $R_{CP}$ as a function of jet radius (from 0.2 to 0.5) at
+a fixed measured jet $\pT$.%  This is shown in Figure~\ref{fig:pas:ATLAS_jet_rcp}, where 
+It is observed that the measured value of $R_{CP}$ increases significantly with increasing radius.
 This indicates that jets with larger radius are slightly less suppressed, presumably since 
 the jet energy profile is slightly wider in more central events.
-\begin{figure}[!th]
-\includegraphics[width=0.59\textwidth]{jetfigures/ATLAS_jetRCP_size.pdf}
-\begin{center}
-\caption{
-Ratios of \Rcp\ values between $R = 0.3, 0.4$ and 0.5 jets and $R =
-0.2$ jets as a function of \pT\ in the 0--10\% centrality bin. The
-error bars show statistical uncertainties. The shaded boxes
-indicate partially correlated systematic errors. The lines indicate
-systematic errors that are fully correlated between different \pT\ bins.
-Reproduced from~\cite{Aad:2012is}.
-}
-\label{fig:pas:ATLAS_jet_rcp}
-\end{center}
-\end{figure}
-
+%\begin{figure}[!th]
+%\includegraphics[width=0.59\textwidth]{jetfigures/ATLAS_jetRCP_size.pdf}
+%\begin{center}
+%\caption{
+%Ratios of \Rcp\ values between $R = 0.3, 0.4$ and 0.5 jets and $R =
+%0.2$ jets as a function of \pT\ in the 0--10\% centrality bin. The
+%error bars show statistical uncertainties. The shaded boxes
+%indicate partially correlated systematic errors. The lines indicate
+%systematic errors that are fully correlated between different \pT\ bins.
+%Reproduced from~\cite{Aad:2012is}.
+%}
+%\label{fig:pas:ATLAS_jet_rcp}
+%\end{center}
+%\end{figure}
+%
 The jet shape variable reflects the distribution of energy as a function of the radial coordinate
 relative to the nominal jet direction.
 The CMS measurements of jet shape as a function of centrality are shown in Figure~\ref{fig:pas:CMS_shape}.
